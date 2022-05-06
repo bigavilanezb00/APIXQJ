@@ -45,4 +45,14 @@ public class Dept {
     public void setLocalitat(String localitat) {
         this.localitat = localitat;
     }
+
+    @Override
+    public String toString() {
+        return "Dept{" +
+                "codi='" + codi + '\'' +
+                ", nom='" + nom + '\'' +
+                ", localitat='" + localitat + '\'' +
+                ", list_emp=" + list_emp +
+                '}';
+    }
 }

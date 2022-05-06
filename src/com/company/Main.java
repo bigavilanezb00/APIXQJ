@@ -4,15 +4,16 @@ package com.company;
 import net.xqj.exist.ExistXQDataSource;
 
 import javax.xml.namespace.QName;
+import javax.xml.stream.XMLStreamException;
 import javax.xml.xquery.*;
 
 public class Main {
 
-    public static void main(String args[]) throws XQException {
+    public static void main(String args[]) throws XQException, XMLStreamException {
 
         GestorBD gestorBD = new GestorBD();
-        
 
+        System.out.println(gestorBD.getDeptSenseEmp("d10"));
         /* XQDataSource xqs = new ExistXQDataSource();
         xqs.setProperty("serverName", "192.168.249.213");
         xqs.setProperty("port", "8080");
