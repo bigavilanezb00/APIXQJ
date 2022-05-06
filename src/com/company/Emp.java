@@ -75,4 +75,17 @@ public class Emp {
     public void setComissio(float comissio) {
         this.comissio = comissio;
     }
+
+    @Override
+    public String toString() {
+        return "Emp{" +
+                "codi='" + codi + '\'' +
+                ", cognom='" + cognom + '\'' +
+                ", ofici='" + ofici + '\'' +
+                ", dataAlta='" + dataAlta + '\'' +
+                ", codi_jefe='" + codi_jefe + '\'' +
+                ", salari=" + salari +
+                ", comissio=" + comissio +
+                '}';
+    }
 }
